@@ -1,0 +1,31 @@
+.promo {
+      min-height: 100vh;
+      position: relative;
+      background: url("../img/main-bg.webp") no-repeat 50% / cover;
+      padding-top: 205px;
+	&__subtitle {
+		position: relative;
+		padding-left: 10px;
+		z-index: 2;
+		@include before-circle;
+	}
+      &__btns {
+            margin-top: 25px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 44px;
+      }
+      &__link {
+            color: $text-color;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+		transition: 0.5s;
+		&:hover {
+			color: #000;
+			text-decoration: none;
+			transition: 0.5s;
+		}
+      }
+}

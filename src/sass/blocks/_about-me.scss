@@ -1,0 +1,64 @@
+.about-me {
+      padding-top: 150px;
+      &__subtitle {
+            position: relative;
+            padding-left: 10px;
+            @include before-circle;
+      }
+      &__content {
+            display: flex;
+            justify-content: flex-start;
+      }
+      &__foto {
+            max-width: 400px;
+            margin-right: 40px;
+            img {
+                  width: 100%;
+            }
+      }
+      &__text {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+      }
+      &__directions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            margin-top: 40px;
+            &-descr {
+                  display: flex;
+            }
+      }
+      &__icon {
+            margin-right: 20px;
+            position: relative;
+            @include before-circle;
+            &::before {
+                  left: -17px;
+                  top: -13px;
+            }
+      }
+      .know-how {
+            list-style-type: none;
+            padding-left: 20px;
+            li {
+                  position: relative;
+                  font-size: 13px;
+                  font-weight: 400;
+                  margin-top: 10px;
+                  &::before {
+                        content: "";
+                        background: url("../icons/about_me/check.svg") center
+                              (center/cover) no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        display: block;
+                        position: absolute;
+                        top: -1px;
+                        left: -23px;
+                  }
+            }
+      }
+}

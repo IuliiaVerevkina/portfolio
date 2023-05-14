@@ -1,0 +1,71 @@
+.resume {
+      padding-top: 120px;
+      &__wrapper {
+            padding: 60px 65px 0 65px;
+            display: grid;
+            grid-template-columns: repeat(2, 425px);
+            column-gap: 135px;
+      }
+      &__column {
+            &-title {
+                  position: relative;
+                  padding-left: 35px;
+                  &::before {
+                        content: "";
+                        width: 15px;
+                        height: 15px;
+                        background-color: $main-color;
+                        border-radius: 100%;
+                        position: absolute;
+                        z-index: -1;
+                        left: -7px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                  }
+            }
+            ul {
+                  list-style-type: none;
+                  li {
+                        position: relative;
+                        &::after {
+                              content: "";
+                              width: 1px;
+                              height: calc(100% + 16px);
+                              position: absolute;
+                              top: -16px;
+                              left: 0;
+                              background-color: $text-color;
+                        }
+                        .resume__item {
+					position: relative;
+					&::before {
+						content: "";
+						width: 37px;
+						height: 1px;
+						background-color: $text-color;
+						position: absolute;
+						top: 58px;
+					}
+                              &-head {
+                                    position: relative;
+                                    padding: 45px 0 0 90px;
+                              }
+                              &-icon {
+                                    position: absolute;
+                                    top: 40px;
+                                    left: 37px;
+                                    @include before-circle;
+						img {
+							position: absolute;
+							left: 17px;
+							top: 14px;
+						}
+                              }
+					&-body {
+						padding-left: 43px;
+					}
+                        }
+                  }
+            }
+      }
+}

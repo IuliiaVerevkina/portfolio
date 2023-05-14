@@ -1,0 +1,154 @@
+@media (max-width: 1200px) {
+      .container {
+            padding: 0 20px;
+      }
+      .promo {
+            padding-top: 100px;
+      }
+      .sidepanel {
+            display: none;
+      }
+      .menu {
+            &__social {
+                  bottom: 30px;
+            }
+      }
+      .about-me,
+      .resume,
+      .skills {
+            padding-top: 70px;
+      }
+      .resume {
+            &__wrapper {
+                  padding: 30px 35px 0 35px;
+                  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+      }
+      .skills {
+            &__wrapper {
+                  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            &__column {
+                  padding: 20px;
+                  img {
+                        height: 50px;
+                        margin-bottom: 10px;
+                  }
+            }
+      }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+      .about-me,
+      .resume,
+      .skills {
+            padding-top: 30px;
+      }
+      .promo {
+            &__subtitle {
+                  &::before {
+                        width: 30px;
+                        height: 30px;
+                  }
+            }
+      }
+      .about-me {
+            &__content {
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 20px;
+            }
+            &__foto {
+                  margin-right: 0;
+                  width: 300px;
+            }
+            &__lead {
+                  text-align: center;
+            }
+            &__subtitle {
+                  &::before {
+                        left: 50%;
+                        transform: translateX(-50%);
+                  }
+            }
+            &__text {
+                  font-size: 12px;
+                  line-height: 17px;
+            }
+            &__directions {
+                  &-descr {
+                        justify-content: center;
+                  }
+            }
+            &__icon {
+                  margin-right: 0px;
+                  &::before {
+                        left: 0px;
+                        top: -13px;
+                  }
+            }
+            .hyphen {
+                  margin: 0 auto;
+            }
+      }
+      .resume {
+            &__wrapper {
+                  padding: 20px 0 0 0;
+                  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+      }
+      .contacts {
+            &__wrapper {
+                  flex-direction: column;
+                  gap: 20px;
+            }
+            &__foto {
+                  margin-right: 0;
+            }
+            &__descr {
+                  text-align: center;
+            }
+            .hyphen {
+                  margin: 0 auto;
+            }
+      }
+      .menu {
+            &__block {
+                  padding-top: 40px;
+                  padding-left: 10px;
+            }
+            &__list {
+                  li {
+                        margin-bottom: 10px;
+                        &::before {
+                              width: 10px;
+                              height: 10px;
+                              left: -20px;
+                        }
+                        &:hover {
+                              &::before {
+                                    width: 12px;
+                                    height: 12px;
+                              }
+                        }
+                        a {
+                              font-size: 14px;
+                              line-height: 27px;
+                              &:hover {
+                                    font-size: 15px;
+                              }
+                        }
+                  }
+            }
+            &__social {
+                  bottom: 15px;
+            }
+      }
+}
+@media (max-width: 576px) {
+      .container {
+            width: 100%;
+            padding: 0 10px;
+      }
+}

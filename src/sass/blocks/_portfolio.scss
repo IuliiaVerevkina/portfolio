@@ -1,0 +1,83 @@
+.portfolio {
+      padding-top: 30px;
+      &__wrapper {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            justify-content: center;
+            justify-items: center;
+            gap: 25px;
+      }
+      &__content {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            width: 280px;
+            height: 210px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+            &:hover .portfolio__link {
+                  bottom: 0;
+            }
+            img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+            }
+      }
+      &__link {
+            position: absolute;
+            bottom: -100%;
+            width: 100%;
+            height: 101%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px 20px 24px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.75);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+            &-title {
+                  font-size: 14px;
+                  font-weight: 600;
+                  cursor: default;
+            }
+            &-subtitle {
+                  margin: 0;
+                  font-size: 18px;
+                  font-weight: 700;
+                  cursor: default;
+            }
+            &-action {
+                  margin-right: 16px;
+                  display: flex;
+                  align-items: center;
+                  transition: opacity 0.2s ease;
+                  cursor: pointer;
+                  justify-content: center;
+                  border: 1px solid #1f1f1f;
+                  padding: 10px;
+                  text-transform: uppercase;
+                  border-radius: 8px;
+                  transition: all 0.5s;
+                  &:hover {
+                        background-color: #e7e7e7;
+                        transition: all 0.5s;
+                  }
+                  img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 4px;
+                        filter: brightness(12%);
+                  }
+                  a {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #1f1f1f;
+                        font-weight: 600;
+                        text-decoration: none;
+                  }
+            }
+      }
+}

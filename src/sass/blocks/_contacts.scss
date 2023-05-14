@@ -1,0 +1,33 @@
+.contacts {
+      padding: 150px 0 50px 0;
+      &__subtitle {
+            position: relative;
+            padding-left: 10px;
+            @include before-circle;
+      }
+      &__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+      &__foto {
+            max-width: 400px;
+            margin-right: 40px;
+            img {
+                  width: 100%;
+                  max-height: 600px;
+            }
+      }
+      &__social {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            a {
+                  img {
+                        width: 30px;
+                        height: 30px;
+                  }
+            }
+      }
+}

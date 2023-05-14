@@ -1,0 +1,45 @@
+.title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 60px;
+      &__fs48 {
+            font-size: 48px;
+      }
+	&__fs20 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+      &__fs16 {
+            font-size: 16px;
+            line-height: 24px;
+      }
+      &__fs14 {
+            font-size: 14px;
+            line-height: 21px;
+      }
+      &__fs12 {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+      }
+	&__center {
+		text-align: center;
+	}
+	&__section-title {
+		position: relative;
+            @include before-circle;
+		&::before {
+			left: 50%;
+                  transform: translateX(-50%);
+		}
+	}
+}
+.hyphen {
+      width: 60px;
+      height: 3px;
+	margin-top: 15px;
+      background-color: $main-color;
+	&__center {
+		margin: 0 auto;
+	}
+}
